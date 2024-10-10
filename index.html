@@ -14,6 +14,7 @@
                     colors: {
                         'regal-blue': '#1E3E62',
                         'regal-blu': '#000000',
+                        'regal-bl': '#ffff',
                     },
                 }
             }
@@ -24,13 +25,14 @@
 
 <body class="py-10 px-5 mx-auto bg-slate-300">
     <div class="mx-auto p-[25px] bg-[#1E3E62] shadow-lg shadow-[#000000] rounded-lg">
+        <p class="text-center text-2xl text-[#ffff] py-5">Weather API</p>
         <div class="mx-auto items-center text-lg font-bold">
             <input type="text" placeholder="Search..." id="input" class="border-none">
             <button onclick="search()" class="text-lg"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-        <p id="output"></p>
+        <p id="error" class="text-center"></p>
+        <p id="output" class="text-[#ffff] text-2xl"><b class="text-xl text-gray-400"></b></p>
     </div>
-
 
 
 
