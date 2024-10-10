@@ -9,7 +9,7 @@ async function search() {
     console.log('Data is available', data);
 
 
-       result +=
+       result =
     `
     <p>${data.name}</p>
     <p>${data.weather[0].description}</p>
