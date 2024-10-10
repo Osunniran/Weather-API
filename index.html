@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'regal-blue': '#1E3E62',
+                        'regal-blu': '#000000',
+                    },
+                }
+            }
+        }
+    </script>
+    <title>Weather API</title>
+</head>
+
+<body class="py-10 px-5 mx-auto bg-slate-300">
+    <div class="mx-auto p-[25px] bg-[#1E3E62] shadow-lg shadow-[#000000] rounded-lg">
+        <div class="mx-auto items-center text-lg font-bold">
+            <input type="text" placeholder="Search..." id="input" class="border-none">
+            <button onclick="search()" class="text-lg"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <p id="output"></p>
+    </div>
+
+
+
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
